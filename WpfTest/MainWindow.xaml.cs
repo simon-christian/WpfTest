@@ -23,12 +23,30 @@ namespace WpfTest
         public MainWindow()
         {
             InitializeComponent();
+
+            DrawCircle();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // Make the background red
-            this.but.Background = new SolidColorBrush(Color.FromRgb(255,0,0));
+ //           but.Background = new SolidColorBrush(Color.FromRgb(255,0,0));
+            leftCircle.Fill = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            // Make the background red
+ //           but2.Background = new SolidColorBrush(Color.FromRgb(0, 0, 255));
+            rightCircle.Fill = new SolidColorBrush(Color.FromRgb(0, 0, 255));
+        }
+
+        private void DrawCircle()
+        {
+            // Make the background red
+  //          Canvas main = new Canvas();
+
+  //          main.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
         }
     }
 }

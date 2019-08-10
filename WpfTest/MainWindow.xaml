@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="but" Content="Hello" HorizontalAlignment="Left" Margin="213,141,0,0" VerticalAlignment="Top" Width="384" Click="Button_Click" Height="149"/>
+        <Canvas>
+            <Ellipse x:Name="rightCircle" Fill="Black" Width="472" Height="400" Canvas.Left="312" Canvas.Top="10" 
+             Canvas.ZIndex="1"/>
+            <Ellipse x:Name="leftCircle" Fill="Black"  Width="297" Height="257" Canvas.Left="10" Canvas.Top="153"/>
+        </Canvas>
+        
+        <Button x:Name="but" Content="Red" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="58" Click="Button_Click" Height="39"/>
+        <Button x:Name="but2" Content="Blue" HorizontalAlignment="Left" Margin="89,49,0,0" VerticalAlignment="Top" Width="58" Click="Button2_Click" Height="39"/>
 
     </Grid>
 </Window>
