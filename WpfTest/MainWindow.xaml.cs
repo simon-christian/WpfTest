@@ -24,5 +24,11 @@ namespace WpfTest
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // Make the background red
+            this.but.Background = new SolidColorBrush(Color.FromRgb(255,0,0));
+        }
     }
 }
