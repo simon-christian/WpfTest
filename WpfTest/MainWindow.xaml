@@ -5,16 +5,78 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Canvas>
-            <Ellipse x:Name="rightCircle" Fill="Black" Width="472" Height="400" Canvas.Left="312" Canvas.Top="10" 
-             Canvas.ZIndex="1"/>
-            <Ellipse x:Name="leftCircle" Fill="Black"  Width="297" Height="257" Canvas.Left="10" Canvas.Top="153"/>
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid Margin="0,0,0,-19.4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="663*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="can" Grid.ColumnSpan="2">
+
+            <Ellipse x:Name="leftCircle40" Stroke="Black" StrokeThickness="1" Fill="White" Width="500" Height="500" Canvas.Left="10" Canvas.Top="10" />
+            <Ellipse x:Name="leftCircle50" Stroke="Black" StrokeThickness="1" Fill="White" Width="400" Height="400" Canvas.Left="60" Canvas.Top="60" />
+            <Ellipse x:Name="leftCircle60" Stroke="Black" StrokeThickness="1" Fill="White" Width="300" Height="300" Canvas.Left="110" Canvas.Top="110" />
+            <Ellipse x:Name="leftCircle70" Stroke="Black" StrokeThickness="1" Fill="White" Width="200" Height="200" Canvas.Left="160" Canvas.Top="160" />
+            <Ellipse x:Name="leftCircle80" Stroke="Black" StrokeThickness="1" Fill="White" Width="100" Height="100" Canvas.Left="210" Canvas.Top="210" />
+
+            <Ellipse x:Name="rightCircle" Stroke="Black" StrokeThickness="1" Fill="White" Width="400" Height="400" Canvas.Left="520" Canvas.Top="10" />
+
+            <Path Stroke="Black" StrokeThickness="1">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="10 60" IsLargeArc="False" SweepDirection="Clockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="20 60" IsLargeArc="False" SweepDirection="Clockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="30 60" IsLargeArc="False" SweepDirection="Clockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="40 60" IsLargeArc="False" SweepDirection="Clockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="50 60" IsLargeArc="False" SweepDirection="Clockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="00 60" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="10 60" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="20 60" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="30 60" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="40 60" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                            </PathFigure>
+
+                            <PathFigure StartPoint="720,10" IsClosed="False">
+                                <ArcSegment Point="720,410" Size="50 60" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                            </PathFigure>
+
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
         </Canvas>
-        
-        <Button x:Name="but" Content="Red" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="58" Click="Button_Click" Height="39"/>
-        <Button x:Name="but2" Content="Blue" HorizontalAlignment="Left" Margin="89,49,0,0" VerticalAlignment="Top" Width="58" Click="Button2_Click" Height="39"/>
+
+        <Button x:Name="but" Content="Red" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="58" Click="Button_Click" Height="39"/>
 
     </Grid>
 </Window>
